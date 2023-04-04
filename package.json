@@ -1,0 +1,20 @@
+{
+  "name": "module-federation-example",
+  "version": "1.0.0",
+  "description": "Simple example on how to implement module federation",
+  "author": "Alessandro Russo",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "build": "npm run build --workspaces",
+    "serve": "wsrun --parallel serve",
+    "start": "concurrently \"wsrun --parallel start\" \"wsrun --parallel serve\""
+  },
+  "workspaces": [
+    "packages/*"
+  ],
+  "devDependencies": {
+    "concurrently": "^8.0.1",
+    "wsrun": "^5.2.4"
+  }
+}
