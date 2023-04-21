@@ -1,4 +1,7 @@
-import Header from "./Header";
+import "./Header";
+
 document.addEventListener("DOMContentLoaded", () => {
-    document.body.appendChild(Header());
+    let header = document.createElement('header-component');
+
+    document.body.appendChild(header);
 });

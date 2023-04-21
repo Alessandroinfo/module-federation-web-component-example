@@ -6,12 +6,13 @@
   "license": "MIT",
   "private": true,
   "scripts": {
+    "install-ws": "npm i",
     "build": "npm run build --workspaces",
     "serve": "wsrun --parallel serve",
     "start": "concurrently \"wsrun --parallel start\" \"wsrun --parallel serve\""
   },
   "workspaces": [
-    "packages/*"
+    "./packages/*"
   ],
   "devDependencies": {
     "concurrently": "^8.0.1",
